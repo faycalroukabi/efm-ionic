@@ -1,0 +1,7 @@
+{
+  "name": "dolphy-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
