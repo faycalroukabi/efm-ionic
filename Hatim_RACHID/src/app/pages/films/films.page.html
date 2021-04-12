@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="end">
+      <ion-button  (click)="Cservice.openSettingModal()" >
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Films</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item button detail lines="inset" *ngFor="let film of (films | async)?.results" (click)="openDetails(film)">
+      {{ film.title }}
+    </ion-item>
+  </ion-list>
+ 
+</ion-content>
