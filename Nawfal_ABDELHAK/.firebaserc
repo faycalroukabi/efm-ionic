@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "phoneauth-25503": {
+      "hosting": {
+        "app": [
+          "phoneauth-25503"
+        ]
+      }
+    }
+  }
+}
