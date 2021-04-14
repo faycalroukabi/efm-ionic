@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ionicchatapp-7b985": {
+      "hosting": {
+        "app": [
+          "ionicchatapp-7b985"
+        ]
+      }
+    }
+  }
+}

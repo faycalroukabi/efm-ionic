@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-searchbar  (keyup)="launchSearch($event)" *ngIf="isSearch;else condition1" animated></ion-searchbar> -->
+    <ion-searchbar (search)="launchSearch($event)" *ngIf="isSearch;else condition1" animated></ion-searchbar>
+    <ng-template #condition1>
+      <ion-title>{{title}}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button id="changelol" (click)="reload()">
+          <ion-icon slot="icon-only" name="refresh"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button id="changeText" (click)="toggleSearch()">
+          <ion-icon slot="icon-only" name="search"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button (click)="Cservice.openSettingModal()">
+          <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ng-template>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="isSearched;else condition2">
+    <div class="container" *ngFor="let photo of (photos | async)?.results">
+
+      <div class="picker"> 
+        <ion-buttons slot="secondary">
+          <ion-button (click)="showImage(photo.urls.regular)">
+            <ion-icon name="eye-outline"></ion-icon>
+          </ion-button>
+          <ion-button (click)="download(photo.urls.regular)">
+            <ion-icon  name="arrow-down"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+      <img src="{{photo.urls.regular}}" alt="yes">
+      
+    </div>
+
+  </div>
+
+  <ng-template #condition2>
+   
+    <div class="container"  *ngFor="let photo of (photos | async)">
+      <div class="picker"> 
+        <ion-buttons slot="secondary">
+          <ion-button (click)="showImage(photo.urls.regular)">
+            <ion-icon name="eye-outline"></ion-icon>
+          </ion-button>
+          <ion-button (click)="download(photo.urls.regular)">
+            <ion-icon  name="arrow-down"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+      <img src="{{photo.urls.regular}}" alt="yes">
+
+    
+    </div>
+
+
+  </ng-template>
+</ion-content>
