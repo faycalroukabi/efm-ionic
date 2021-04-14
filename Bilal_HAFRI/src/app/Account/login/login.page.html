@@ -39,11 +39,9 @@
     </form>
 
     <br>
+      <ion-button color="primary" (click)="signIn()" expand="full">Sing in</ion-button>
 
-      <ion-button color="primary" (click)="signUp()" expand="full">Sing up</ion-button>
-      <ion-button color="success" (click)="signIn()" expand="full" color="secondary">Sing in</ion-button>
-
-      <p>You don’t have an Account?<br>
+      <p (click)="signUp()">You don’t have an Account?<br>
       It’s not my problem</p>
   </div>
 </ion-content>
