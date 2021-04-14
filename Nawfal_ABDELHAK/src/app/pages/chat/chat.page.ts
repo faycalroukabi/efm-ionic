@@ -22,6 +22,7 @@ export class ChatPage implements OnInit {
 
   ngOnInit() {
     this.messages = this.chatService.getChatMessages();
+    
   }
 
   sendMessage(type) {

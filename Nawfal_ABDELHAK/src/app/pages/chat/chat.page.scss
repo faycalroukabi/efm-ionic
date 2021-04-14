@@ -16,13 +16,13 @@
 }
 
 .my-message {
-    background: var(--ion-color-tertiary);
-    color: #fff;
+    background:#DCF8C6 ;
+    color: black;
 }
 
 .other-message {
-    background: var(--ion-color-secondary);
-    color: #fff;
+    background: #ffffff;
+    color:black;
 }
 
 .time {
@@ -30,3 +30,7 @@
     float: right;
     font-size: small;
 }
+
+.background {
+    --background: url("/assets//background.jpg") 0 0/100% 100% no-repeat
+   }
