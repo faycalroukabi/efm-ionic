@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "minipfe-ca455": {
+      "hosting": {
+        "app": [
+          "minipfe-ca455"
+        ]
+      }
+    }
+  }
+}
