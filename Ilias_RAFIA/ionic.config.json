@@ -1,0 +1,7 @@
+{
+  "name": "minipfe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
