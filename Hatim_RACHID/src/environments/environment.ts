@@ -6,8 +6,7 @@
 //fireBase config && unsplash 
 export const environment = {
   production: false,
-  UnsplashApi:"Your Api key",
-  //your Fire base config
+  UnsplashApi:"",
   firebaseConfig : {
     apiKey: "",
     authDomain: "",

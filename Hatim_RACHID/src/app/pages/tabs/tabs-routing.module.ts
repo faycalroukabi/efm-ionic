@@ -38,6 +38,15 @@ const routes: Routes = [
             loadChildren: () => import('../chat/chat.module').then( m => m.ChatPageModule)
           }
         ]
+      },
+       {
+        path: 'currency',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../currency/currency.module').then( m => m.CurrencyPageModule)
+          }
+        ]
       }
     ]
   },

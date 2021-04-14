@@ -39,6 +39,10 @@ const routes: Routes = [
   {
     path: 'image-viewer',
     loadChildren: () => import('./modals/image-viewer/image-viewer.module').then( m => m.ImageViewerPageModule)
+  },
+  {
+    path: 'currency',
+    loadChildren: () => import('./pages/currency/currency.module').then( m => m.CurrencyPageModule)
   }
   
 ];
