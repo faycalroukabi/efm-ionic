@@ -1,0 +1,130 @@
+<ion-content >
+  <div class="redDivH">
+    <ion-icon name="arrow-back-outline"class="btnBack"  (click)="goBack()"></ion-icon>
+    <img src="assets/imgs/logo_trans.png" class="logo" slot="center" />
+    <div></div>
+  </div>
+  <div class="all">
+    <div class="upper_div" >
+      <div class="prName"><ion-label>{{productOrder.product.name}}</ion-label></div>
+      <img [src]="productOrder.product.image" class="scooter">
+    </div>
+    <div class="acc">
+      <div class="accH"><ion-label>Les accompagnenent</ion-label></div>
+        <ion-slides [options]="slideOpts">
+          <ion-slide  *ngFor="let item of products">
+            <ion-grid class="accGrid">
+              <ion-row class="ion-justify-content-start">
+                <ion-col  class="accCard" >
+                  <img src="../../assets/imgs/fries.png">
+                  <ion-col style="margin-left: 20%;">
+                    <ion-checkbox color="main"  class="accCheck"  checked="false"></ion-checkbox>
+                  </ion-col>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-slide>
+        </ion-slides>
+    </div>
+    <div class="acc">
+      <div class="accH"><ion-label>Les boissons</ion-label></div>
+        <ion-slides [options]="slideOpts">
+          <ion-slide  *ngFor="let item of products">
+            <ion-grid class="accGrid">
+              <ion-row class="ion-justify-content-start">
+                <ion-col  class="accCard" >
+                  <img src="../../assets/imgs/fanta.png">
+                  <ion-col style="margin-left: 20%;">
+                    <ion-checkbox color="main"  class="accCheck"  checked="false"></ion-checkbox>
+                  </ion-col>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-slide>
+        </ion-slides>
+
+    </div>
+    <div class="desc_container">
+      <ion-label>{{productOrder.product.description}}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad non reprehenderit quas numquam dicta, ipsam voluptatibus ducimus sunt? Distinctio in vero error dolor? Placeat, nam saepe. Voluptatem, expedita vitae!
+      </ion-label>
+  </div>
+  <div class="comm">
+    <div class="comDiv1" ><ion-label>vous le Vouler ? c'est par ici !</ion-label></div>
+    <div class="comDiv2" ><ion-button expand="round" (click)="addToCart()" color="main">ajouter au pagnier</ion-button></div>
+  </div>
+  <!-- <div class="tool" >
+    <div class="btnDiv">
+      <ion-button expand="round" (click)="addToCart()" color="main" style="--color:white"  class="main-button">Add To Cart</ion-button>
+     </div>
+    <div class="priceDiv">
+      <ion-label class="priceLbl">{{productOrder.product.price}}$</ion-label>
+     </div>
+   </div> -->
+   <!-- <div class="lower_div">
+      <div class="heading_div">
+        <ion-label class="heading_lbl">{{productOrder.product.name}}</ion-label>
+         <ion-icon name="heart-empty" mode="md" class="heart"></ion-icon>
+        <ion-icon name="heart-outline" mode="md" class="heart"></ion-icon>
+      </div>
+
+      <div class="rating_div">
+        <ion-icon name="star" class="rating"></ion-icon>
+        <ion-label class="small_lbl"><span class="red_lbl">4.9 </span>(124 rating)</ion-label>
+        <ion-label class="small_lbl top_item">Burger - western food - $$</ion-label>
+      </div>
+
+      <div class="rating_div">
+        <ion-icon name="pin"></ion-icon>
+        <ion-label class="small_lbl top_item">123 Rock street, New York City</ion-label>
+      </div>
+      <div class="qty-selector">
+        <ion-button (click)="decreaseQuantity()" fill="clear">-</ion-button>
+        <ion-label>{{counter}}</ion-label>
+        <ion-button (click)="increaseQuantity()"  fill="clear">+</ion-button>
+      </div>
+
+      <div class="desc_container">
+          <ion-label class="desc_header"> Description</ion-label>
+          <ion-label>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labor
+              e consectetur magni provident cumque, officia porro harum assumenda quos earum commodi sint
+              dolore do.
+          </ion-label>
+      </div>
+      <div class="slider_div">
+        <ion-label class="heading_lbl">Popular Choices</ion-label>
+        <ion-slides  [options]="slideOpts">
+
+          <ion-slide *ngFor="let product of products">
+            <div class="slide_div">
+              <div class="img_back">
+                <img src="assets/imgs/burger1.jpg" class="slider_img">
+              </div>
+              <div>
+                <ion-label class="slider_lbl">{{product.name}}</ion-label>
+                <ion-label class="slider_lbl">${{product.price}}</ion-label>
+              </div>
+            </div>
+          </ion-slide>
+        </ion-slides>
+      </div>
+
+      <!-- <ion-button (click)="addToCart()" expand="full" shape="round" class="red_btn">
+        Add to Basket
+      </ion-button>
+
+    </div>  -->
+  </div>
+</ion-content>
+<!-- <ion-footer translucent="true" class="ion-no-border" mode="md">
+  <ion-toolbar class="tool" >
+   <div class="btnDiv">
+     <!-- <ion-button expand="round" (click)="addToCart()" color="main" style="--color:white"  class="main-button">Add To Cart</ion-button>
+    </div>
+   <div class="priceDiv">
+     <!-- <ion-label class="priceLbl">{{productOrder.product.price}}$</ion-label> -
+    </div>
+  </ion-toolbar>
+
+</ion-footer>  -->

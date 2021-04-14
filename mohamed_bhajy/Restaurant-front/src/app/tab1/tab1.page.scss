@@ -1,0 +1,135 @@
+// .ios_test{
+//     padding-top: 40px !important;
+// }
+ion-toolbar:last-child {
+  --border-width: 0px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.main_content_div{
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 20px;
+  text-align:center;
+  .heading_lbl{
+      font-size: 4vh;
+  }
+  .ionCard{
+       height: 45vw;
+      background-color:#FDF6EE;
+      color: black;
+      h3{
+          text-transform: uppercase;
+      }
+      ion-img{
+          background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 26vw;
+
+  display: block; margin-left: auto; margin-right: auto;
+      }
+  }
+}
+.slider_div {
+  position: relative;
+  margin-top: -20px;
+
+  ion-slide {
+      height: 53vh;
+  }
+
+  .back_image {
+      object-fit: cover;
+      border-radius: 10px;
+      width: 85%;
+      height: 100%;
+  }
+
+  .abButton {
+      width: 60%;
+      height: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      --border-radius: 50px;
+      --background: #bb1e33;
+      margin-top: -80px;
+      z-index: 20;
+      font-weight: bolder;
+  }
+}
+page-home {
+  ion-icon {
+      font-size: 5em;
+  }
+}
+
+.redDiv {
+  width: 100%;
+  height: 40vh;
+  --background: #bb1e33;
+  background-color: #bb1e33;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .redDivH {
+      width: 100%;
+      height: 80px;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 8px;
+      font-size: 4vh;
+      .menu_ion {
+          ion-menu-button {
+              font-size: 5vh;
+          }
+          font-size: 5vh;
+      }
+      ion-icon {
+          font-size: 5vh;
+      }
+      img {
+          height: 70px;
+      }
+  }
+  .rest {
+      width: 90%;
+      height: 5vh;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 50px;
+      font-size:2vh;
+      background-color: rgba(255, 255, 255, 0.39);
+      ion-icon {
+          font-size: 3vh;
+          margin: 0 10px;
+      }
+  }
+  .redL {
+      width: 100%;
+      height: 50px;
+      color: white;
+      font-size: 5vh;
+      padding-left: 20px;
+      margin-bottom: 10px;
+      line-height: 1px;
+  }
+}
