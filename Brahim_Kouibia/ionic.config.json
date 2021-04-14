@@ -1,0 +1,7 @@
+{
+  "name": "doctor-appointment-crud-efm",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
