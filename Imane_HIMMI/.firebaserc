@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "chatapplication-ff784": {
+      "hosting": {
+        "app": [
+          "chatapplication-ff784"
+        ]
+      }
+    }
+  }
+}
