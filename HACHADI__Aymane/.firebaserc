@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "app-aymane": {
+      "hosting": {
+        "app": [
+          "app-aymane"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<ion-header >
+  <ion-toolbar color="dark">
+    <ion-title align="center">EMOAPP</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" color="light">
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/kyle-sung.jpg" alt="kyle-sung">
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title align="center">LOGIN</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content color="primary">
+      
+      <ion-item color="light">
+        <ion-input class="id" placeholder="Entrer votre email" [(ngModel)]="username"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item color="light">
+          <ion-input  placeholder="Entrer votre mot de passe" type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button (click)="signIn()"color="dark">Se connecter</ion-button>
+      <ion-button href="/registration" color="light">S'incrire</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
