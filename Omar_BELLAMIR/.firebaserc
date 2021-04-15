@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "test-998b3": {
+      "hosting": {
+        "app": [
+          "test-998b3"
+        ]
+      }
+    },
+    "chat-db463": {
+      "hosting": {
+        "app": [
+          "chat-db463"
+        ]
+      }
+    }
+  }
+}
