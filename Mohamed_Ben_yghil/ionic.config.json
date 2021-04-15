@@ -1,0 +1,7 @@
+{
+  "name": "gest-info",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
