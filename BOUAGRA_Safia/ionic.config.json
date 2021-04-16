@@ -1,7 +1,6 @@
 {
-  "name": "ChatApplication",
+  "name": "Finance-Application",
   "integrations": {
-    "capacitor": {},
     "cordova": {}
   },
   "type": "angular"
