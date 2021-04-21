@@ -1,0 +1,83 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ACCUEIL
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="signOut()" defaultHref="/">se deconnecter</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button  href="/Histoire">Histoire</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="dark">
+  <ion-slides page [options]="option">
+    <ion-slide>
+       <ion-card>
+         <ion-card-header>
+           <img src="assets/slide1.jpg" alt="slide1">
+         </ion-card-header>
+  
+         <ion-card-content>
+           RELAX & WORK
+         </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <ion-card-header>
+           <img src="assets/slide2.jpg" alt="slide2">
+        </ion-card-header>
+
+        <ion-card-content>
+          CITATION 
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+       <ion-card>
+         <ion-card-header>
+           <img src="assets/slide3.jpg" alt="slide3">
+         </ion-card-header>
+
+        <ion-card-content>
+              ETUDIER 
+        </ion-card-content>
+      </ion-card>
+   </ion-slide>
+  </ion-slides>
+  <ion-toolbar color="dark">
+    <ion-title>Citations</ion-title>
+  </ion-toolbar>
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/Life-Quotes-Happy.jpg" alt="Life-Quotes-Happy">
+    </ion-card-header>
+
+    <ion-card-content>
+      “ The purpose of our lives is to be happy.” — Dalai Lama.
+    </ion-card-content>
+ </ion-card>
+ <ion-card>
+  <ion-card-header>
+    <img src="assets/Life-quotes-Failure.jpg" alt="Life-quotes-Failure">
+  </ion-card-header>
+
+  <ion-card-content>
+    “Many of life’s failures are people who did not realize how close they were to success when they gave up.”– Thomas A. Edison
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-header>
+    <img src="assets/Life-Quotes-Seneca.jpg" alt="Life-Quotes-Seneca">
+  </ion-card-header>
+
+  <ion-card-content>
+    “Not how long, but how well you have lived is the main thing.” — Seneca
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
