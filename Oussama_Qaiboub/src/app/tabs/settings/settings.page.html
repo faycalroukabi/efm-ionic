@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="status-user-bar">
+    <ion-item lines="none" style="margin-top: 8px;margin-bottom: 8px;">
+      <ion-buttons slot="start" (click)="myProfile()">
+        <ion-button fill="clear" >
+          <ion-icon name="person" slot="icon-only"></ion-icon>
+        </ion-button>
+        <ion-label>
+          My Profile
+        </ion-label>
+      </ion-buttons>
+    </ion-item>
+    <ion-item lines="none" style="margin-top: 8px;margin-bottom: 8px;">
+      <ion-buttons slot="start" (click)="signOut()">
+        <ion-button fill="clear" >
+          <ion-icon name="log-out" slot="icon-only"></ion-icon>
+        </ion-button>
+        <ion-label>
+          Logout
+        </ion-label>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+</ion-content>

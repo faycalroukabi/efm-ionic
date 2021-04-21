@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button fill="clear" color="medium">
+                <ion-icon slot="icon-only" name="settings-sharp"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>
+            <img class="logo" src="../../../assets/tinder-logo.png">
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button fill="clear" color="medium">
+                <ion-icon slot="icon-only" name="chatbubbles-sharp"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+    <div class="card_bg_box">
+        <div class="card_bg_1">
+            <ion-item  *ngFor="let result of results">
+                <ion-label>{{ result }}</ion-label>
+            </ion-item>
+        </div>
+        <div class="card_bg_2"></div>
+    </div>
+
+</ion-content>
