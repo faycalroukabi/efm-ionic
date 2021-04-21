@@ -4,16 +4,23 @@ This is Ionic based chatting app with Firebase. User can chat with all users of 
 
 # output will be
 
-![login-screen](./login.jpeg)
+<img src="./login.jpeg" alt="login-screen" style="zoom:35%;"/>         <img src="./register.jpeg" alt="register-screen" style="zoom:35%;" />
 
-![register-screen](./register.jpeg)
 
-![chat-screen](./chat.jpeg)
 
-![conversation-chat-screen](./chat-detail.jpeg)
 
-![calls-screen](./calls.jpeg)
 
-![status-screen](./status.jpeg)
+<img src="./chat.jpeg" alt="chat-screen" style="zoom:35%;" />            <img src="./chat-detail.jpeg" alt="conversation-chat-screen" style="zoom:35%;" />
 
-![setting-screen](./settings.jpeg)
+
+
+
+
+<img src="./calls.jpeg" alt="calls-screen" style="zoom:35%;" />            <img src="./status.jpeg" alt="status-screen" style="zoom:35%;" />
+
+
+
+
+
+<img src="./settings.jpeg" alt="setting-screen" style="zoom:35%;" />
+
