@@ -6,8 +6,10 @@ import { AngularFirestore } from '@angular/fire/firestore';
 
 //Import Component for the update function and the Modal controller to handle the component.
 
-import { UpdaterecordComponent } from '../components/updaterecord/updaterecord.component';
+import { UpdaterecordComponent } from '../../components/updaterecord/updaterecord.component';
 import { ModalController } from '@ionic/angular';
+import { ChatService } from "../../services/chat.service";
+import { Router } from "@angular/router";
 
 
 @Component({
@@ -23,6 +25,8 @@ export class Tab1Page implements OnInit {
   constructor(
     private firestore: AngularFirestore,
     private modalController: ModalController,
+    private chatService : ChatService,
+    private  router : Router
   ) {}
 
   ngOnInit(){
@@ -67,5 +71,8 @@ export class Tab1Page implements OnInit {
   DeleteRecord(id){
     this.firestore.doc('/Records/'+id).delete()
   }
-
-}
+  signOut() {
+    this.chatService.signOut().then(() => {
+      this.router.navigateByUrl('/', { replaceUrl: true });
+    });
+}}
