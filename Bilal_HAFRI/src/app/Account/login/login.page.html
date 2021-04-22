@@ -1,0 +1,47 @@
+
+<ion-content class="ion-align-items-end">
+  <div class="ion-text-center content">
+    <br>
+    <br>
+    <h5>Welcome Back</h5>
+    <h1><b>D</b><i>!</i><b>R</b></h1>
+    <h5>login to start</h5>
+
+    <form class="login" [formGroup]="credentialForm">
+      <ion-item>
+        <ion-label color="primary"  position="floating">Username</ion-label>
+        <ion-input
+          color="medium"
+          formControlName="email"
+          autofocus="true"
+          clearInput="true"
+        ></ion-input>
+
+      </ion-item>
+      <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors ion-text-start">
+        <span *ngIf="email.errors?.required">Email is required</span>
+        <span *ngIf="email.errors?.email">Email is invalid</span>
+      </div>
+
+      <ion-item>
+        <ion-label color="primary"  position="floating">Password</ion-label>
+        <ion-input
+        color="medium"
+        type="password"
+        formControlName="password"
+        clearInput="true"
+      ></ion-input>
+      </ion-item>
+      <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors ion-text-start">
+        <span *ngIf="password.errors?.required">Password is required</span>
+        <span *ngIf="password.errors?.minlength">Password needs to be 6 characters</span>
+      </div>
+    </form>
+
+    <br>
+      <ion-button color="primary" (click)="signIn()" expand="full">Sing in</ion-button>
+
+      <p (click)="signUp()">You don’t have an Account?<br>
+      It’s not my problem</p>
+  </div>
+</ion-content>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dir-ionic-app": {
+      "hosting": {
+        "app": [
+          "dir-ionic-app"
+        ]
+      }
+    }
+  }
+}

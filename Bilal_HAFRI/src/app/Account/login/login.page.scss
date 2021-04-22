@@ -1,0 +1,32 @@
+ion-content{
+  background: var(--ion-color-dark);
+  padding: auto 30px;
+}
+.content{
+  margin: 30px;
+}
+h1{
+  font-size: 5em;
+  color: var(--ion-color-primary);
+  margin-top: -10px;
+}
+
+ion-item{
+  margin-left: -18px;
+}
+p{
+  opacity: 0.5;
+  transition: opacity 2s;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.errors {
+    font-size: small;
+    color: #fff;
+    background: var(--ion-color-danger);
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
