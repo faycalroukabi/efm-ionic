@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>KhalilChatApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <form [formGroup]="credentialForm">
+    <ion-item>
+      <ion-input
+        placeholder="Email address"
+        formControlName="email"
+        autofocus="true"
+        clearInput="true"
+      ></ion-input>
+    </ion-item>
+    <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+      <span *ngIf="email.errors?.required">Email important</span>
+      <span *ngIf="email.errors?.email">Email incorrect</span>
+    </div>
+
+    <ion-item>
+      <ion-input
+        placeholder="Password"
+        type="password"
+        formControlName="password"
+        clearInput="true"
+      ></ion-input>
+    </ion-item>
+    <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+      <span *ngIf="password.errors?.required">Password important</span>
+      <span *ngIf="password.errors?.minlength">Password a besoin 6 characters</span>
+    </div>
+  </form>
+
+  <ion-button (click)="signUp()" expand="full">inscription</ion-button>
+  <ion-button (click)="signIn()" expand="full" color="secondary">Entrer</ion-button>
+
+</ion-content>
