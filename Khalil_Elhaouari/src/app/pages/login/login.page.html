@@ -1,11 +1,11 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="danger">
     <ion-title>KhalilChatApp</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-
+<img src="https://www.freeiconspng.com/uploads/iphone-message-icon-png-22.png" alt="">
   <form [formGroup]="credentialForm">
     <ion-item>
       <ion-input
@@ -34,7 +34,7 @@
     </div>
   </form>
 
-  <ion-button (click)="signUp()" expand="full">inscription</ion-button>
-  <ion-button (click)="signIn()" expand="full" color="secondary">Entrer</ion-button>
+  <ion-button (click)="signUp()" expand="full" color="dark">inscription</ion-button>
+  <ion-button (click)="signIn()" expand="full" color="medium">Entrer</ion-button>
 
 </ion-content>
