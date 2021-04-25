@@ -2,7 +2,7 @@
     width: 100%;
     border: 1px solid var(--ion-color-medium);
     border-radius: 6px;
-    background: #fff;
+    background: rgb(12, 0, 0);
     resize: none;
     margin-top: 0px;
     --padding-start: 8px;
@@ -16,12 +16,12 @@
 }
 
 .my-message {
-    background: var(--ion-color-tertiary);
-    color: #fff;
+    background: #44a006;
+    color: rgb(0, 0, 0);
 }
 
 .other-message {
-    background: var(--ion-color-secondary);
+    background: #a00606;
     color: #fff;
 }
 
