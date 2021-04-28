@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "e-commercecigma": {
+      "hosting": {
+        "app": [
+          "e-commercecigma"
+        ]
+      }
+    },
+    "chatcigma": {
+      "hosting": {
+        "app": [
+          "projet"
+        ]
+      }
+    }
+  }
+}
