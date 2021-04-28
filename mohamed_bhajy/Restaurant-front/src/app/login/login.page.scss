@@ -1,0 +1,82 @@
+.ios_test{
+  padding-top: 40px !important;
+}
+.main_content_div{
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .upper_div{
+      .back_arrow{
+          width: 20px;
+      }
+
+      .content_div{
+
+
+          .sign_in{
+
+              font-size: 20;
+              font-weight: bold;
+              color: #2F3132;
+              border-bottom: 3px solid #2F3132;
+
+
+
+          }
+          .sign_up{
+
+              font-size: 20;
+              font-weight: bold;
+              color: #D8D8D8;
+              border-bottom: 3px solid #D8D8D8;
+
+
+
+          }
+
+          .div_form{
+              margin-top: 40px;
+              .ip{
+                 border:1px solid #D8D8D8;
+                  border-radius: 3px;
+                  margin-top: 10px;
+                  --padding-start : 15px;
+                  height: 40px;
+                  width: 90%;
+
+              }
+              .forgot_lbl{
+                  color: #6C6C6C;
+                  margin-top: 15px;
+                  display: block;
+                  margin-bottom: 10px;
+                  font-family: open-regular;
+                  text-decoration: underline;
+              }
+          }
+
+          .red_btn{
+
+              height: 55px;
+              align-self: center;
+              margin-top: 30px;
+          }
+      }
+  }
+  .lower_div{
+      text-align: center;
+      .bottom_lbl{
+          display: block;
+          margin-top: 40px;
+          font-size: 12px;
+          margin-left: 8%;
+          text-decoration: underline;
+
+      }
+  }
+
+}

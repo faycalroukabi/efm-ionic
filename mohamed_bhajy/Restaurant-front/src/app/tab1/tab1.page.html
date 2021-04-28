@@ -1,0 +1,49 @@
+<ion-content>
+  <div class="redDiv">
+    <div class="redDivH">
+      <ion-buttons class="menu_icon" slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <img src="assets/imgs/logo_trans.png" slot="center" />
+      <ion-icon name="map-sharp"></ion-icon>
+    </div>
+    <div class="rest">
+      <ion-icon name="location-sharp"></ion-icon>
+      <ion-label>TROUVER UN RESTAURANT</ion-label>
+      <ion-icon name="locate-sharp"></ion-icon>
+    </div>
+    <div class="redL">
+      <ion-label>
+        WHAT'S HOT ?
+      </ion-label>
+    </div>
+  </div>
+
+  <div class="slider_div">
+    <ion-slides [options]="slideOpts">
+      <ion-slide *ngFor="let item of menus">
+        <img class="back_image" [src]="item" alt="">
+      </ion-slide>
+    </ion-slides>
+    <ion-button class="abButton">Decouvrez-LES !</ion-button>
+  </div>
+
+  <div class="main_content_div" [class.ios_test]="helper.platformIsIos()">
+      <ion-label class="heading_lbl">UNE PETITE OU UNE GROSSE FAIN ? 🍔</ion-label>
+      <ion-grid>
+        <ion-row >
+          <ion-col sizeLg="4" sizeMd="4" sizeXs="6" *ngFor="let item of products"  col-6>
+            <ion-card (click)="goToSupplem(item)" text-center padding class="ionCard">
+              <h3 >{{item.name}}</h3>
+              <ion-img [src]="item.image" ></ion-img>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+    </div>
+
+
+
+</ion-content>

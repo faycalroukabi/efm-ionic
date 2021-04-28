@@ -1,0 +1,75 @@
+
+<ion-content fullscreen="true">
+  <div class="header">
+    <ion-icon (click)="goBack()" name="chevron-back-outline"></ion-icon>
+    <div>
+      <ion-title>Checkout</ion-title>
+    </div>
+  </div>
+  <div class="address">
+    <ion-input value= {{user.address}} [(ngModel)]="user.address" ></ion-input>
+  </div>
+
+  <hr>
+  <div class="payment_div">
+    <ion-label class="small_lbl">Payment Method</ion-label>
+  </div>
+
+  <div class="payment_method">
+
+    <div class="list_item" (click)="choosePaymentMethod(1)">
+      <img src="../../assets/imgs/paypal.png" style="width: 25px;height: 30px">
+      <ion-label style="margin-left: 10px;">PayPal </ion-label>
+      <img src="../../assets/imgs/verified.png" class="right_img" style="width: 25px;height: 25px;" *ngIf="paymentMethode == 1">
+    </div>
+    <div class="list_item" (click)="choosePaymentMethod(2)">
+      <img src="../../assets/imgs/visa.png" style="width: 25px;height: 30px">
+      <ion-label style="margin-left: 10px;"> Pay with cart</ion-label>
+      <img src="../../assets/imgs/verified.png" class="right_img" style="width: 25px;height: 25px;" *ngIf="paymentMethode == 2">
+    </div>
+
+
+    <div  *ngIf="paymentMethode == 2">
+      <!-- <ion-item>
+        <ion-label>Card Type</ion-label>
+        <ion-input type="text" [(ngModel)]="card.cardType"></ion-input>
+      </ion-item> -->
+      <ion-item>
+        <ion-label>Card Number</ion-label>
+        <ion-input type="text" [(ngModel)]="card.cardNumber"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Expiry Month</ion-label>
+        <ion-input type="text" [(ngModel)]="card.expiryMonth"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Expiry Year</ion-label>
+        <ion-input type="text" [(ngModel)]="card.expiryYear"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>CVV</ion-label>
+        <ion-input type="text" [(ngModel)]="card.cvv"></ion-input>
+      </ion-item>
+    </div>
+  </div>
+  <hr>
+  <div class="cart-total">
+    <ion-item lines="none">
+      <ion-label>Sub Total</ion-label>
+      <ion-label slot="end" class="ion-text-right">${{total}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Shipping</ion-label>
+      <ion-label slot="end" class="ion-text-right">Free</ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>Total</ion-label>
+      <ion-label slot="end" class="ion-text-right">${{total}}</ion-label>
+    </ion-item>
+  </div>
+</ion-content>
+<ion-footer translucent="true" class="ion-no-border" mode="md">
+  <ion-toolbar >
+    <ion-button expand="block" (click)="makeOrder()" color="main" class="main-button" >Continue</ion-button>
+  </ion-toolbar>
+</ion-footer>

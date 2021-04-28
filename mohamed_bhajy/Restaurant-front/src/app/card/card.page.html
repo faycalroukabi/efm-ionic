@@ -1,0 +1,37 @@
+
+<ion-content fullscreen="true">
+  <div class="header">
+    <ion-icon (click)="goBack()" name="chevron-back-outline"></ion-icon>
+    <div>
+      <ion-title>Card</ion-title>
+    </div>
+  </div>
+
+  <div class="cart-items" *ngFor="let item of Cart">
+    <ion-card mode="ios">
+      <ion-card-content>
+        <div class="item-img">
+          <img [src]="item.product.image" />
+        </div>
+
+        <div class="item-info">
+          <p>{{item.product.name}}</p>
+          <p>{{item.product.price}}$</p>
+
+          <div class="qty-selector">
+            <ion-button (click)="decreaseQuantity()" fill="clear">-</ion-button>
+            <ion-label>{{item.quantity}}</ion-label>
+            <ion-button (click)="increaseQuantity()"fill="clear">+</ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+
+  </div>
+</ion-content>
+<ion-footer translucent="true" class="ion-no-border" mode="md">
+  <ion-toolbar >
+    <ion-button expand="block" class="main-button" color="main" routerLink="/checkout" routerDirection="forward">Continue</ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,56 @@
+<ion-content>
+    <img style="position: absolute;z-index: 99999;top: 20px; left: 20px;width: 20px;height: 20px;" (click)="helper.back()"
+        src="../../assets/imgs/back2.png">
+
+  <div class="main_content_div" [class.ios_test]="helper.platformIsIos()">
+
+    <div class="upper_div" [style.margin-top]="marginTop">
+      <!-- <img src="assets/imgs/back2.png" class="back_arrow"> -->
+
+      <div class="content_div">
+        <img style=" display: block; margin-left: auto; margin-right: auto;margin-top: 15px; " src="../../assets/imgs/logo_trans.png"
+          height="100">
+
+        <ion-row style="margin-top: 25px;" class="ion-justify-content-around">
+
+          <ion-col  (click)="gotoRegister()"  size="5" class="sign_up">
+            S'INSCRIRE
+          </ion-col>
+          <ion-col size="5" class="sign_in">
+            SE CONNECTER
+          </ion-col>
+
+        </ion-row>
+
+
+        <img style=" display: block; margin-left: auto; margin-right: auto; margin-top: 22px; "
+          src="../../assets/imgs/welcome_image.PNG" height="250">
+
+        <div style="margin-left: 10%;">
+
+          <ion-row style="margin-top: 20px;font-size: 20;
+          font-weight: bold;
+          color: #2F3132;">
+            IDENTIFIEZ-VOUS
+          </ion-row>
+
+          <div class="div_form">
+            <div style="color: #6C6C6C;">USERNAME*</div>
+            <ion-input type="text" class="ip" [(ngModel)]="username" placeholder="USERNAME"></ion-input>
+            <div style="color: #6C6C6C; margin-top: 8px;">Mot de passe*</div>
+            <ion-input type="text" class="ip" type="password" [(ngModel)]="password" placeholder="Password"></ion-input>
+          </div>
+          <div style="text-align: center;">
+            <ion-button (click)="logIn()" shape="round" color="dark_red" class="red_btn">
+              ME CONNECTER
+            </ion-button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+</ion-content>
