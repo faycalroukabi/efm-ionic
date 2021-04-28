@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Zineb Chat App</ion-title>
+    <ion-title>SignIn/SignUp To Chat</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -22,11 +22,11 @@
 
     <ion-item>
       <ion-input
-        placeholder="Password"
-        type="password"
-        formControlName="password"
-        clearInput="true"
-      ></ion-input>
+      placeholder="Password"
+      type="password"
+      formControlName="password"
+      clearInput="true"
+    ></ion-input>
     </ion-item>
     <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
       <span *ngIf="password.errors?.required">Password is required</span>
@@ -34,7 +34,7 @@
     </div>
   </form>
 
-  <ion-button (click)="signUp()" expand="full">Sing up</ion-button>
-  <ion-button (click)="signIn()" expand="full" color="secondary">Sing in</ion-button>
+    <ion-button (click)="signUp()" expand="full">Sing up</ion-button>
+    <ion-button (click)="signIn()" expand="full" color="secondary">Sing in</ion-button>
 
 </ion-content>
