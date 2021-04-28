@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" defaultHref="/tabs/chats"></ion-back-button>
+        </ion-buttons>
+
+        <ion-item lines="none" class="user-toolbar" *ngIf="user">
+            <ion-avatar slot="start">
+                <ion-title>Profile</ion-title>
+                <!-- <img [src]="user.email">-->
+            </ion-avatar>
+            <ion-label class="ion-no-margin">
+                {{user.image}}
+            </ion-label>
+        </ion-item>
+    </ion-toolbar>
+</ion-header>
+<ion-content padding>
+    <!--  <img [src]="authData.image" *ngIf="authData.image">-->
+    <div class="userInfo">
+        <h4>Id : </h4> <span class="spanStyle">{{user.id}}</span>
+        <h4>UserName :</h4> <span class="spanStyle">{{user.name}}</span>
+        <h4>Email : </h4><span class="spanStyle">{{user.email}}</span>
+    </div>
+
+</ion-content>
