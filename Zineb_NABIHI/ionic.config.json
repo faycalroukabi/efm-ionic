@@ -1,7 +1,6 @@
 {
-  "name": "ChatApplication",
+  "name": "MyAppC",
   "integrations": {
-    "capacitor": {},
     "cordova": {}
   },
   "type": "angular"

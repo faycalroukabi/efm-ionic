@@ -1,9 +1,9 @@
 {
   "targets": {
-    "chatapplication-ff784": {
+    "my-app-4530c": {
       "hosting": {
         "app": [
-          "chatapplication-ff784"
+          "my-app-4530c"
         ]
       }
     }
