@@ -1,0 +1,7 @@
+{
+  "name": "feionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

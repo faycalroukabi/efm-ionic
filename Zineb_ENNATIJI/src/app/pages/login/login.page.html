@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar color="danger">
+        <ion-title>Bavard</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+    <form [formGroup]="credentialForm">
+        <ion-item>
+            <ion-input placeholder="Email" formControlName="email" autofocus="true" clearInput="true"></ion-input>
+        </ion-item>
+        <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+            <span *ngIf="email.errors?.required">L'Email est obligatoire</span>
+            <span *ngIf="email.errors?.email">Votre email est invalide</span>
+        </div>
+
+        <ion-item>
+            <ion-input placeholder="Mot de passe" type="password" formControlName="password" clearInput="true"></ion-input>
+        </ion-item>
+        <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+            <span *ngIf="password.errors?.required">Le mot de passe est obligatoire</span>
+            <span *ngIf="password.errors?.minlength">Le mot de passe doit contenir 6 characters</span>
+        </div>
+    </form>
+
+    <ion-button (click)="signUp()" expand="full">S'authentifier</ion-button>
+    <ion-button (click)="signIn()" expand="full" color="secondary">Se connecter</ion-button>
+
+</ion-content>
